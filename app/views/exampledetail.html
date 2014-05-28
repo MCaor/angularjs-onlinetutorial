@@ -1,0 +1,36 @@
+<div class="row codemirror">
+    <div class="col-md-6">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">HTML</h3>
+            </div>
+            <div class="panel-body">
+                <codemirror editor="htmlEditor" mode="htmlmixed"></codemirror>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">JavaScript</h3>
+            </div>
+            <div class="panel-body">
+                <codemirror editor="jsEditor" mode="javascript"></codemirror>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="center control-panel">
+    <div class="btn-group">
+        <button class="btn btn-success glyphicon glyphicon-play" ng-click="run()"></button>
+        <button class="btn btn-primary glyphicon glyphicon-refresh" ng-click="refresh()"></button>
+    </div>
+</div>
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">Result</h3>
+    </div>
+    <div class="panel-body">
+        <iframe ng-src="{{result}}"></iframe>
+    </div>
+</div>
