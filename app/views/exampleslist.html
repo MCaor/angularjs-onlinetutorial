@@ -1,1 +1,13 @@
-<p>This is the examplesList view.</p>
+<div class="bs-glyphicons">
+    <ul class="bs-glyphicons-list">
+        <li title="{{example.message}}" ng-repeat="example in examples">
+            <a ng-href="#exampleDetail/{{example.id}}">
+                <span class="glyphicon glyphicon-eye-open"></span>
+                <span class="glyphicon-class">
+                    {{example.name}}
+                </span>
+            </a>
+        </li>
+    </ul>
+</div>
+

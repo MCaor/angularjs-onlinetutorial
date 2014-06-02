@@ -2,8 +2,27 @@
 
 angular.module('yeomanProjApp')
     .controller('ExampledetailCtrl', [
-        '$scope', '$sce', function($scope, $sce) {
+        '$scope', '$routeParams', '$sce', 'examples', function($scope, $routeParams, $sce, examples) {
             $scope.result = $sce.trustAsResourceUrl('about:blank');
+
+        examples.find($routeParams.exampleId, function(example) {
+
+            examples.getFiles(example, function (data) {
+                var html = data.html;
+                var js = data.js;
+
+                if (html) {
+                    $scope.htmlEditor.setValue(html.trim());
+                }
+
+                if (js) {
+                    $scope.jsEditor.setValue(js.trim());
+                }
+                //$scope.readme = $sce.trustAsHtml(marked(md));
+            });
+
+            $scope.example = example;
+        });
 
             $scope.run = function() {
                 var html = $scope.htmlEditor.getValue();

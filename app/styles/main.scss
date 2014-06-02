@@ -95,6 +95,49 @@ codemirror {
     padding: 1px;
 }
 
+.bs-glyphicons {
+    margin: 0 -19px 20px -16px;
+    overflow: hidden;
+}
+
+.bs-glyphicons-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.bs-glyphicons li {
+    float: left;
+    width: 25%;
+    height: 115px;
+    padding: 10px;
+    font-size: 10px;
+    line-height: 1.4;
+    text-align: center;
+    border: 1px solid #fff;
+    background-color: #f9f9f9;
+}
+
+.bs-glyphicons li:hover {
+    background-color: #2a6496;
+}
+
+.bs-glyphicons li:hover a {
+    color: #f9f9f9;
+    text-decoration: none;
+}
+
+.bs-glyphicons .glyphicon {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.bs-glyphicons .glyphicon-class {
+    display: block;
+    text-align: center;
+    word-wrap: break-word;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .container {
@@ -115,5 +158,15 @@ codemirror {
     /* Remove the bottom border on the jumbotron for visual effect */
     .jumbotron {
         border-bottom: 0;
+    }
+
+    .bs-glyphicons {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .bs-glyphicons li {
+        width: 12.5%;
+        font-size: 12px;
     }
 }

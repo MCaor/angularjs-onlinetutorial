@@ -13,14 +13,6 @@
     "angular-route": "1.2.15",
 	"codemirror": "~4.2.0"
   },
-  "main": [
-      "codemirror/mode/xml/xml.js",
-      "codemirror/mode/css/css.js",
-      "codemirror/mode/htmlmixed/htmlmixed.js",
-      "codemirror/mode/javascript/javascript.js",
-      "codemirror/addon/display/fullscreen.js",
-      "addon/display/fullscreen.css"
-  ],
   "devDependencies": {
     "angular-mocks": "1.2.15",
     "angular-scenario": "1.2.15"
